@@ -152,7 +152,7 @@ def menu():
         quantity = 1
 
     coupon_code = input("Enter coupon code (or press Enter to skip): ").strip().upper()
-    discount = coupons.get(coupon_code, 0)
+    discount = coupons.get(coupon_code, 10)
 
     if discount:
         print(f"🎉 Coupon applied: {discount}% off!")
